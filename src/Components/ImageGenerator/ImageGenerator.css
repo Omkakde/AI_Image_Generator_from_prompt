@@ -1,0 +1,96 @@
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.ai-image-generator {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.header {
+  font-size: 70px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.header span {
+  font-weight: 600;
+  color: rgb(255, 0, 153);
+}
+
+.img-loading {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Update the image styles to make it responsive */
+.img-loading img {
+  max-width: 100%; /* Allow the image to scale to the width of its container */
+  height: auto;    /* Maintain the image's aspect ratio */
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #1f3540;
+  max-width: 750px; /* Adjust maximum width as needed */
+  width: 100%; /* Fill the available width */
+  padding: 10px; /* Add some padding for better mobile view */
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px; /* You can adjust padding as needed */
+  margin-right: 5px;
+  width: 100%; /* Allow it to scale to the available width */
+}
+
+.generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* Allow it to scale to the available width */
+  height: 60px;
+  font-size: 20px;
+  border-radius: 50px;
+  background: #DE1B89;
+  cursor: pointer;
+}
+
+/* Responsive styles for tablets */
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 50px;
+    padding-bottom: 4px; /* Adjust padding for tablets */
+  }
+
+  .search-box {
+    max-width: 500px;
+    padding: 8px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 30px;
+    padding-bottom: 2px; /* Adjust padding for mobile devices */
+  }
+
+  .search-box {
+    max-width: 300px;
+    padding: 6px;
+  }
+}
